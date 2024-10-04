@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="css/stylesheet2.css">
   </head>
@@ -22,8 +23,22 @@
       <h2>Portfolio Catalogue</h2>
       <p>Welcome to Portfolio page! This section shows my work on data analytics.</p>
       <h3>Data Analytics Project on the buying behavior of Consumers in an Online Superstore</h3>        
-      <img class="imageR" src="images/images.jpg" alt="My Data Analytics Project">  
-      <h3>Business insights of an Online Superstore</h3>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide active">
+            <img src="images/images.jpg" alt="Water Slide">
+        </div>
+        <div class="slide">
+          <img src="images/images.jpg" alt="Lazy River">
+        </div>
+        <div class="slide">
+          <img src="images/images.jpg" alt="My Data Analytics dashboard">
+        </div>
+      </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+         <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div> 
+      <h4>Business insights of an Online Superstore</h4>
         <p>This project focuses on analyzing data to derive business insights.</p>
         <p>Findings include sales trends, customer behavior, and inventory management.</p>
         <p>This project studies the buying behavior of customers in an online Super store for 3 years in the 50 states of United States of America.</p>
