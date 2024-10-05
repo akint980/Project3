@@ -5,15 +5,14 @@ let currentSlide = 0; // Initialize the current slide index
 // Function to show the current slide
 function showSlide(index) {
     // Hide all slides
-    slides.forEach((slide, i) => {
+    slides.forEach((slide) => {
         slide.classList.remove('active');
-        // Set the display to none for non-active slides
-        slide.style.display = 'none';
+        slide.style.display = 'none'; // Set display to none
     });
 
     // Show the current slide
     slides[index].classList.add('active');
-    slides[index].style.display = 'block';
+    slides[index].style.display = 'block'; // Set display to block
 }
 
 // Function to change slide
@@ -33,3 +32,7 @@ function changeSlide(direction) {
 
 // Show the first slide initially
 showSlide(currentSlide);
+
+// Optional: Add event listeners to buttons
+document.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
+document.querySelector('.next').addEventListener('click', () => changeSlide(1));
