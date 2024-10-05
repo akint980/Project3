@@ -88,6 +88,57 @@ button {
     right: 10px;
 }
 
+* For tablets and larger devices */
+@media (min-width: 600px) {
+  .header-container {
+     padding: 30px;
+    }
+
+  nav ul li {
+    margin: 0 20px;
+    }
+
+  #portfolio {
+     padding: 40px;
+    }
+
+  .slider {
+     max-width: 90%;
+     margin: 0 auto;
+    }
+
+  .slide {
+     min-width: 50%; /* Two slides per view */
+    }
+}
+
+/* For desktops and larger devices */
+@media (min-width: 900px) {
+  .header-container {
+    padding: 40px;
+   }
+
+  nav ul li {
+   margin: 0 25px;
+   font-size: 1.2em;
+    }
+
+  .slider {
+    max-width: 80%;
+    }
+
+  .slide {
+    min-width: 33.33%; /* Three slides per view */
+    }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    }
+}
+
+
 main {
   max-width: 1200px; 
   margin: 20px auto; 
