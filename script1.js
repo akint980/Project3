@@ -2,6 +2,12 @@
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0; // Initialize the current slide index
 
+// Get the slider div
+const sliderDiv = document.querySelector('.slider');
+
+// Expose the sliderDiv to the global window object for console access
+window.slider = sliderDiv;
+
 // Function to show the current slide
 function showSlide(index) {
     // Hide all slides
